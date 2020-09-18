@@ -139,6 +139,9 @@ HexoComponent:
                       Qualifier: Prod # 版本（可选)
                     - Path: '/a'
                       Qualifier: Prod # 版本（可选)
+       Bootstrap:
+          Port: 9000
+          Start: npm run server -p $PORT -s
 ```
 
 ### 详细使用方法
