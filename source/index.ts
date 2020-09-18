@@ -1,7 +1,13 @@
-import { DEFAULTPORT, DEFAULTSTART, DEFAULTBOOTSTRAP } from './bootstrap';
-import Framework = require('/Users/jiangyu/Desktop/components/s-framework/lib');
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import Framework = require('@serverless-devs/s-framework');
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import format = require('string-format');
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import fse = require('fs-extra');
+import { DEFAULTPORT, DEFAULTSTART, DEFAULTBOOTSTRAP } from './bootstrap';
 
 
 interface ProjectConfig {
