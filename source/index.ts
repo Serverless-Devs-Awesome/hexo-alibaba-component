@@ -1,10 +1,8 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import Framework = require('@serverless-devs/s-framework');
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import format = require('string-format');
 import { DEFAULTPORT, DEFAULTSTART, DEFAULTBOOTSTRAP } from './bootstrap';
+import Framework = require('/Users/jiangyu/Desktop/components/s-framework/lib');
+import format = require('string-format');
+import fse = require('fs-extra');
+
 
 interface ProjectConfig {
   ProjectName: string;
@@ -49,7 +47,18 @@ class HexoComponent extends Framework {
       port: Detail.Bootstrap ? Detail.Bootstrap.Port || DEFAULTPORT : DEFAULTPORT,
       start: Detail.Bootstrap ? Detail.Bootstrap.Start || DEFAULTSTART : DEFAULTSTART
     };
-    frameworkInputs.Bootstrap = format(DEFAULTBOOTSTRAP, formatStr);
+    const bootstrapPath = Detail.Bootstrap ? Detail.Bootstrap.Path : undefined;
+    if (bootstrapPath) {
+      frameworkInputs.Bootstrap = {
+        Content: await fse.readFileSync(bootstrapPath, 'utf-8'),
+        IsConfig: Detail.Bootstrap ? true : false
+      };
+    } else {
+      frameworkInputs.Bootstrap = {
+        Content: format(DEFAULTBOOTSTRAP, formatStr),
+        IsConfig: Detail.Bootstrap ? true : false
+      };
+    }
     return await super.deploy(frameworkInputs);
   }
 

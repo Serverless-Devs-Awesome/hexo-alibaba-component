@@ -4,7 +4,7 @@ Provider:
   - Alibaba
   - Tencent
   - Huawei
-Version: 0.0.28
+Version: 0.0.29
 Description: 阿里云Hexo组件，帮助您快速部署Hexo项目
 HomePage: https://www.aliyun.com/
 Tags:
@@ -420,4 +420,8 @@ Properties:
                     Required: false
                     Type:
                       - String
-
+                  Path:
+                    Description: Bootstrap地址
+                    Required: false
+                    Type:
+                      - String
