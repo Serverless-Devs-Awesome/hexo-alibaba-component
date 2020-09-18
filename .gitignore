@@ -17,6 +17,7 @@ lib
 .cache
 */test
 */src
+src
 !fc/src
 !s-zip/src
 package-lock.json
