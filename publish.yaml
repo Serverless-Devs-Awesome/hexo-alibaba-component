@@ -2,9 +2,7 @@ Type: Component
 Name: hexo
 Provider:
   - Alibaba
-  - Tencent
-  - Huawei
-Version: 0.0.34
+Version: 0.0.35
 Description: 阿里云Hexo组件，帮助您快速部署Hexo项目
 HomePage: https://www.aliyun.com/
 Tags:

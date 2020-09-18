@@ -11,7 +11,7 @@
 模版拉取：
 
 ```
-s init hexo
+s init hexo -p alibaba
 ```
 
 其中Yaml的默认配置为：
