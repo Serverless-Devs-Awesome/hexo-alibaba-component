@@ -1,6 +1,6 @@
 {
   "name": "@serverless-devs/hexo-alibaba",
-  "version": "0.0.42",
+  "version": "0.0.43",
   "description": "Serverless Devs Tool Hexo Framework Component For Alibaba Cloud",
   "keywords": [
     "Serverless",
@@ -9,7 +9,7 @@
     "Serverless-Tool",
     "Hexo"
   ],
-  "homepage": "https://www.serverlessfans.com",
+  "homepage": "https://www.serverless-devs.com",
   "author": "Serverless-Devs",
   "contributors": [
     "Shoushuai Wang",
