@@ -2,10 +2,13 @@ Type: Component
 Name: hexo
 Provider:
   - Alibaba
-Version: 0.0.45
+Version: 0.0.46
 Description: 阿里云Hexo组件，帮助您快速部署Hexo项目
 HomePage: https://www.aliyun.com/
 Tags:
+  - Hexo
+  - Nodejs
+  - Web
   - 函数计算
 Category: 基础云服务
 Commands:
