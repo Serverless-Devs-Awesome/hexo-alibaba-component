@@ -25,6 +25,7 @@
     "url": "https://github.com/ServerlessTool/hexo-alibaba"
   },
   "scripts": {
+    "build": "tsc -p compile.tsconfig.json",
     "watch": "tsc -w -p compile.tsconfig.json",
     "dev": "tsc -p compile.tsconfig.json && cp -r ./node_modules ./src",
     "cd": "npm install --production && tsc -p compile.tsconfig.json && cp -r ./node_modules ./src",
