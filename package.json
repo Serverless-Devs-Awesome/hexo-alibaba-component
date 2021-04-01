@@ -1,6 +1,6 @@
 {
   "name": "@serverless-devs/hexo-alibaba",
-  "version": "0.0.48",
+  "version": "0.0.49",
   "description": "Serverless Devs Tool Hexo Framework Component For Alibaba Cloud",
   "keywords": [
     "Serverless",
@@ -27,9 +27,7 @@
   "scripts": {
     "build": "tsc -p compile.tsconfig.json",
     "watch": "tsc -w -p compile.tsconfig.json",
-    "dev": "tsc -p compile.tsconfig.json && cp -r ./node_modules ./src",
-    "cd": "npm install --production && tsc -p compile.tsconfig.json && cp -r ./node_modules ./src",
-    "release": "npm install --production && tsc -p compile.tsconfig.json && cp -r ./node_modules ./src && s platform publish"
+    "publish": "npm install --production && tsc -p compile.tsconfig.json"
   },
   "dependencies": {
     "@serverless-devs/s-framework": "^0.0.22",
